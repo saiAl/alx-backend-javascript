@@ -2,10 +2,11 @@ export default class Building {
   constructor(sqft) {
     this._sqft = sqft;
     if (
-      this.evacuationWarningMessage() === false && this.constructor.name !== 'Building'
+      this.evacuationWarningMessage() === false &&
+      this.constructor.name !== 'Building'
     ) {
       throw Error(
-        'Class extending Building must override evacuationWarningMessage',
+        'Class extending Building must override evacuationWarningMessage'
       );
     }
   }
@@ -17,6 +18,8 @@ export default class Building {
   set sqft(newSqft) {
     this._sqft = newSqft;
   }
+
+  /* eslint class-methods-use-this: off */
 
   evacuationWarningMessage() {
     return false;
