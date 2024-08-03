@@ -19,9 +19,8 @@ export default class Building {
     this._sqft = newSqft;
   }
 
-  /* eslint class-methods-use-this: off */
-
   evacuationWarningMessage() {
-    return false;
+    this._false = false;
+    return this._false;
   }
 }
