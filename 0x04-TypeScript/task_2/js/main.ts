@@ -68,7 +68,21 @@ function executeWork(employee: Director | Teacher) {
   }
 }
 
-executeWork(createEmployee(200));
+/* executeWork(createEmployee(200));
 // Getting to work
 executeWork(createEmployee(1000));
 // Getting to director tasks
+ */
+
+// task 7
+
+function teachClass(todayClass: string): string {
+  return `Teaching ${todayClass}`;
+}
+
+/* 
+teachClass('Math');
+Teaching Math
+teachClass('History');
+Teaching History
+*/
