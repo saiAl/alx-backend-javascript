@@ -1,9 +1,12 @@
 export default function cleanSet(set, startString) {
   const arr = [];
+  let sub;
   for (const s of set) {
-    const sub = s.substring(0, 3);
-    if (sub == startString) {
-      arr.push(s.substring(3));
+    if (startString && typeof startString === 'string') {
+      sub = s.substring(0, startString.length);
+      if (sub === startString) {
+        arr.push(s.substring(startString.length));
+      }
     }
   }
 
